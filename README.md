@@ -1,3 +1,96 @@
+
+Overview
+
+
+
+DoubtShare is a real-time doubt-solving website meant to assist students with their academic problems in an engaging manner. By facilitating communication between tutors and students, the platform guarantees effective settlement of doubts.
+
+Features of the Product
+Types of Users Students:
+
+Qualities: Language and class grade. Steps taken: Make requests for doubt. Instructors:
+
+Qualities: Question language, class rank, and subject knowledge. Respond to inquiries from students about doubts.
+
+Indicates the language, class grade, and doubt subject. System locates online tutors who meet the requirements. Instantaneous Notification:
+
+Instant notifications are sent to qualified tutors.
+
+monitors the available tutors in real time.
+
+updates the "Tutor Availability" table with each tutor's most recent ping time every three seconds. CRON Work:
+
+counts the tutors who are now available in real time every second.
+
+Technologies used
+the project is build in :
+ MongoDB: Database
+Express.js: Backend Framework
+React.js: Frontend Library
+Node.js: Runtime Environment
+
+Navigate to the project directory:
+
+cd frontend
+cd backend
+Install dependencies:
+npm install
+
+Set up the MongoDB connection and other environment variables.
+
+Run the application:
+
+For frontend : npm start
+For backend : npm run server
+
+User Routes
+1.Register
+
+>Endpoint: /register
+>Method: POST
+>Description: Allows users to register on the platform.
+
+2.Login
+>Endpoint: /login
+>Method: POST
+>Description: Allows users to log in and receive an authentication token.
+>
+3.Logout
+>Endpoint: /logout
+>Method: GET
+
+ Doubt Routes
+ 
+1.Get Doubt History
+Endpoint: /doubt/history
+Method: GET
+Description: Retrieves the doubt history of the currently logged-in student.
+2.Add Doubt
+Endpoint: /doubt/addDoubt
+Method: POST
+Description: Allows students to add a doubt.
+Tutor Routes
+Get Tutor Profile
+Endpoint: /tutor/gettutor
+Method: GET
+Description: Retrieves the profile of the currently logged-in tutor.
+Add Tutor Data
+Endpoint: /tutor/addData
+Method: POST
+Description: Allows tutors to add their profile information.
+Update Tutor Data
+Endpoint: /tutor/updateData
+Method: PATCH
+Description: Allows tutors to update their profile information.
+
+Update Tutor Ping
+Endpoint: /tutor/update-ping
+Method: POST
+Description: Updates the last ping time for a tutor.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
